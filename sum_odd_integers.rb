@@ -11,3 +11,13 @@
 # 16
 
 p "Enter at least 2 numbers, separated by spaces:"
+input = gets.chomp.split("")
+the_array = Array.new
+
+input.each do |test259|
+  if test259.to_i.odd? == true
+    the_array.push(test259.to_i)
+  end
+end
+
+p the_array.sum

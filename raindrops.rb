@@ -37,3 +37,35 @@
 
 
 p "Enter an integer"
+number = gets.chomp
+
+if number.to_i % 3 == 0 &&
+    number.to_i % 5 > 0 &&
+    number.to_i % 7 > 0
+    p "Pling"
+elsif number.to_i % 5 == 0 &&
+    number.to_i % 3 > 0 &&
+    number.to_i % 7 > 0
+    p "Plang"
+elsif number.to_i % 7 == 0 &&
+    number.to_i % 5 > 0 &&
+    number.to_i % 3 > 0
+    p "Plong"  
+elsif number.to_i % 3 == 0 &&
+    number.to_i % 5 == 0 &&
+    number.to_i % 7 > 0
+    p "PlingPlang"
+elsif number.to_i % 3 == 0 &&
+    number.to_i % 7 == 0 &&
+    number.to_i % 5 > 0
+    p "PlingPlong"  
+elsif number.to_i % 5 == 0 &&
+    number.to_i % 7 == 0 &&
+    number.to_i % 3 > 0
+    p "PlangPlong"
+elsif number.to_i % 5 == 0 &&
+    number.to_i % 7 == 0 &&
+    number.to_i % 3 == 0
+    p "PlingPlangPlong"   
+else p number.to_i
+end

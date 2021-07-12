@@ -4,3 +4,6 @@
 #   and finally prints, "'the' appeared x times", where x is an Integer
 
 p "Enter a sentence:"
+sentence = gets.gsub(/[^a-z0-9\s]/i,"").chomp.split
+p sentence.count("the")
+p  "'the' appeared " + sentence.count("the").to_s + " times"

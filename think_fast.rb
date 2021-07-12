@@ -29,7 +29,17 @@ unpredictable_inputs = [
 
 some_random_input = unpredictable_inputs.sample
 
-p some_random_input
+p some_random_input.class
 
 # Write your code below
 
+if some_random_input.class == String
+  p some_random_input.downcase
+end
+
+if some_random_input.class == Hash
+  p some_random_input.keys
+end
+
+
+  
